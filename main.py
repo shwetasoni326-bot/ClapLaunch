@@ -41,7 +41,8 @@ try:
                 print(f"Clap {clap_count} Detected! Volume Peak: {peak}")
 
                 if clap_count == 2:
-                    print("--> DOUBLE CLAP DETECTED!")
+                    print("--> DOUBLE CLAP DETECTED! Opening YouTube...")
+                    os.system("start https://www.youtube.com")
                     clap_count = 0
                     time.sleep(0.5)
 
